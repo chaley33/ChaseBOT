@@ -43,8 +43,12 @@ client.on('message', message =>
             setPointsCommand(message, args);
         else if(command === 'mention')
         {
-            console.log('test');
             message.channel.send(`<@${message.author.id}>`);
+        }
+        else if(command === 'pm')
+        {
+            console.log('test');
+            message.author.sendMessage(`Hey this is a test.`);
         }
     }
     else if(!message.author.bot)

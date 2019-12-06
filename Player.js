@@ -15,7 +15,6 @@ class Player
 
     addPoints(points)
     {
-        console.log("Adding " + points + " points.");
         this.points += points;
     }
 

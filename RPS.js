@@ -14,6 +14,7 @@ class RPS
     addPlayer(id, channel, tag)
     {
         let playerAdded = false;
+        this.oChannel = channel;
         
         while(!playerAdded)
         {
